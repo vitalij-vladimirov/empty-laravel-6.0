@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  laravel-6.0:
+    container_name: laravel-6.0
+    build:
+      context: '.'
+      args:
+      - APP_ENV=development
+      - COMPOSER_NO_INTERACTION=0
+    image: laravel-6.0
+    ports:
+    - 777:80
+    volumes:
+    - ./src:/app
+    environment:
+    - LOG_STDOUT=/dev/null
+    - LOG_STDERR=/dev/null
+    command: bash -c "composer update --lock --prefer-source && supervisord"

@@ -1,0 +1,25 @@
+2019-09-23 18:24:47,685 CRIT Supervisor running as root (no user in config file)
+2019-09-23 18:24:47,685 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2019-09-23 18:24:47,685 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2019-09-23 18:24:47,685 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2019-09-23 18:24:47,685 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2019-09-23 18:24:47,685 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2019-09-23 18:24:47,685 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2019-09-23 18:24:47,685 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2019-09-23 18:24:47,700 INFO RPC interface 'supervisor' initialized
+2019-09-23 18:24:47,700 INFO supervisord started with pid 1
+2019-09-23 18:24:48,704 INFO spawned: 'syslogd' with pid 77
+2019-09-23 18:24:48,709 INFO spawned: 'nginxd' with pid 78
+2019-09-23 18:24:48,711 INFO spawned: 'php-fpmd' with pid 79
+2019-09-23 18:24:48,713 INFO spawned: 'crond' with pid 80
+2019-09-23 18:24:48,720 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2019-09-23 18:24:48,720 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2019-09-23 18:24:48,721 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2019-09-23 18:24:49,821 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-09-23 19:09:26,683 WARN received SIGQUIT indicating exit request
+2019-09-23 19:09:26,683 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2019-09-23 19:09:28,687 INFO stopped: crond (terminated by SIGTERM)
+2019-09-23 19:09:28,699 INFO stopped: php-fpmd (exit status 0)
+2019-09-23 19:09:28,705 INFO stopped: nginxd (exit status 0)
+2019-09-23 19:09:29,707 INFO waiting for syslogd to die
+2019-09-23 19:09:29,811 INFO stopped: syslogd (exit status 0)
